@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Undugu Restaurant.</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Undugu Restaurant </h1>
+    <p>Home to Best Kenyan Cusine.</p>
+  </header>
+
+  <section>
+    <h2>Available today</h2>
+
+    <h3>Main Menu</h3>
+    <ul>
+      <li>Ugali</li>
+      <li>Dondo</li>
+      <li>Managu</li>
+      <li>Omena</li>
+    </ul>
+
+    <h3>Special Menu(On order)</h3>
+    <ol>
+      <li>Kienyeji Chicken</li>
+      <li>Fish Fry</li>
+      <li>Mokimo</li>
+      <li>Nyama Choma</li>
+    </ol>
+
+    <h3>Serving Options</h3>
+    <dl>
+      <dt>Ugali</dt>
+      <dd>served with; Managu,Fish,Nyama Choma</dd>
+      <dt>Mukimo</dt>
+      <dd>Served with; Nyama fry,Plain</dd>
+      <dt>Dondo</dt>
+      <dd>Served with; Ugali,Rice,Chapati</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Waiting Time on Orders </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Order Number</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1 Hour</t>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>10 Minutes</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>1 Hour</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>15 Minutes</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>10 Minutes</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>3. Media Gallery</h2>
+
+    <h3>Sample Image</h3>
+    <img src="https://via.placeholder.com/600x200" alt="Placeholder banner" width="100%" />
+
+    <h3>Sample Audio</h3>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Sample Video</h3>
+    <video width="100%" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2>4. Sign UP </h2>
+    <form action="#" method="post" novalidate>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3" />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="13" max="120" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" pattern="[A-Za-z0-9]{5,}" required title="At least 5 letters or numbers"/>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6" />
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required minlength="6" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="table">Select Table:</label>
+        <select id="table" name="table" required>
+          <option value="">-- Please Choose --</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+
+        <label>
+          <input type="checkbox" name="newsletter" value="yes" />
+          Subscribe to newsletter
+        </label>
+
+        <label>Preferred delivery:</label>
+        <label><input type="radio" name="mode" value="inhouse" required /> Inhouse</label>
+        <label><input type="radio" name="mode" value="in-person" /> Home delivery</label>
+
+        <label for="bio">Suggestions:</label>
+        <textarea id="bio" name="bio" rows="4" maxlength="300" placeholder="Tell us about your experience..."></textarea>
+      </fieldset>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Undugu. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
